@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="rock-paper-scissors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="game-container">
+      <h1 class="title">Rock Paper Scissors</h1>
+      
+      <div class="moves-container">
+        <button class="move-button js-rock-button" aria-label="Choose Rock">
+          <img src="images/rock-emoji.png" class="move-icon" alt="Rock">
+          <span class="key-hint">R key</span>
+        </button>
+
+        <button class="move-button js-paper-button" aria-label="Choose Paper">
+          <img src="images/paper-emoji.png" class="move-icon" alt="Paper">
+          <span class="key-hint">P key</span>
+        </button>
+
+        <button class="move-button js-scissors-button" aria-label="Choose Scissors">
+          <img src="images/scissors-emoji.png" class="move-icon" alt="Scissors">
+          <span class="key-hint">S key</span>
+        </button>
+      </div>
+
+      <div class="result-section">
+        <p class="js-result result"></p>
+        
+        <div class="moves-display js-moves-display">
+          <div class="player-move">
+            <span>You</span>
+            <div class="js-player-move"></div>
+          </div>
+          <div class="vs">VS</div>
+          <div class="computer-move">
+            <span>Computer</span>
+            <div class="js-computer-move"></div>
+          </div>
+        </div>
+        
+        <div class="score js-score-display">
+          <div class="score-item">
+            <span>Wins</span>
+            <span class="score-number wins js-wins">0</span>
+          </div>
+          <div class="score-item">
+            <span>Losses</span>
+            <span class="score-number losses js-losses">0</span>
+          </div>
+          <div class="score-item">
+            <span>Ties</span>
+            <span class="score-number ties js-ties">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="reset-score-button js-reset-score-button">
+          <i class="fas fa-redo-alt button-icon"></i> Reset Score
+        </button>
+
+        <button class="auto-play-button js-auto-play-button">
+          <i class="fas fa-robot button-icon"></i> <span class="js-auto-play-text">Auto Play</span>
+        </button>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <p>Press keyboard keys (R, P, S) to play quickly</p>
+    </footer>
+    
+    <script src="rock-paper-scissors.js"></script>
+  </body>
+</html>
